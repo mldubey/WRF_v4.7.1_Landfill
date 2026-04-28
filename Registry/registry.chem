@@ -275,6 +275,26 @@ state   real    e_rco_oh        i+jf    emis_ant        1       Z       i5r     
 state   real    e_co2tst        i+jf    emis_ant        1       Z       i5       "E_CO2TST"      "Anthropogenic CO2 test fluxes"     "mol km^-2 hr^-1"
 state   real    e_cotst         i+jf    emis_ant        1       Z       i5       "E_COTST"       "Anthropogenic CO test fluxes"      "mol km^-2 hr^-1"
 state   real    e_ch4tst        i+jf    emis_ant        1       Z       i5       "E_CH4TST"      "Anthropogenic CH4 test fluxes"     "mol km^-2 hr^-1"
+state   real    e_ch4_s01       i+jf    emis_ant        1       Z       i5       "E_CH4_S01"      "Landfill hybrid CH4 source slot 01 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s02       i+jf    emis_ant        1       Z       i5       "E_CH4_S02"      "Landfill hybrid CH4 source slot 02 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s03       i+jf    emis_ant        1       Z       i5       "E_CH4_S03"      "Landfill hybrid CH4 source slot 03 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s04       i+jf    emis_ant        1       Z       i5       "E_CH4_S04"      "Landfill hybrid CH4 source slot 04 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s05       i+jf    emis_ant        1       Z       i5       "E_CH4_S05"      "Landfill hybrid CH4 source slot 05 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s06       i+jf    emis_ant        1       Z       i5       "E_CH4_S06"      "Landfill hybrid CH4 source slot 06 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s07       i+jf    emis_ant        1       Z       i5       "E_CH4_S07"      "Landfill hybrid CH4 source slot 07 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s08       i+jf    emis_ant        1       Z       i5       "E_CH4_S08"      "Landfill hybrid CH4 source slot 08 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s09       i+jf    emis_ant        1       Z       i5       "E_CH4_S09"      "Landfill hybrid CH4 source slot 09 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s10       i+jf    emis_ant        1       Z       i5       "E_CH4_S10"      "Landfill hybrid CH4 source slot 10 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s11       i+jf    emis_ant        1       Z       i5       "E_CH4_S11"      "Landfill hybrid CH4 source slot 11 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s12       i+jf    emis_ant        1       Z       i5       "E_CH4_S12"      "Landfill hybrid CH4 source slot 12 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s13       i+jf    emis_ant        1       Z       i5       "E_CH4_S13"      "Landfill hybrid CH4 source slot 13 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s14       i+jf    emis_ant        1       Z       i5       "E_CH4_S14"      "Landfill hybrid CH4 source slot 14 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s15       i+jf    emis_ant        1       Z       i5       "E_CH4_S15"      "Landfill hybrid CH4 source slot 15 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s16       i+jf    emis_ant        1       Z       i5       "E_CH4_S16"      "Landfill hybrid CH4 source slot 16 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s17       i+jf    emis_ant        1       Z       i5       "E_CH4_S17"      "Landfill hybrid CH4 source slot 17 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s18       i+jf    emis_ant        1       Z       i5       "E_CH4_S18"      "Landfill hybrid CH4 source slot 18 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s19       i+jf    emis_ant        1       Z       i5       "E_CH4_S19"      "Landfill hybrid CH4 source slot 19 emissions"     "mol km^-2 hr^-1"
+state   real    e_ch4_s20       i+jf    emis_ant        1       Z       i5       "E_CH4_S20"      "Landfill hybrid CH4 source slot 20 emissions"     "mol km^-2 hr^-1"
 
 # GHG emission variables
 state   real     -              ivjf     eghg_bio       -        -       -         -             "All biospheric GHG fluxes "                 ""
@@ -2162,6 +2182,26 @@ state   real    ch4_ant    ikjftb   chem         1         -     i0{12}rhusdf=(b
 state   real    ch4_bbu    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_BBU"       "mixing ratio of biomass burning CH4"  "ppmv"
 state   real    ch4_bck    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_BCK"       "mixing ratio of background CH4"       "ppmv"
 state   real    ch4_tst    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_TST"       "mixing ratio of CH4, test fluxes"  "ppmv"
+state   real    ch4_s01    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S01"       "mixing ratio of landfill hybrid CH4 source slot 01"  "ppmv"
+state   real    ch4_s02    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S02"       "mixing ratio of landfill hybrid CH4 source slot 02"  "ppmv"
+state   real    ch4_s03    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S03"       "mixing ratio of landfill hybrid CH4 source slot 03"  "ppmv"
+state   real    ch4_s04    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S04"       "mixing ratio of landfill hybrid CH4 source slot 04"  "ppmv"
+state   real    ch4_s05    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S05"       "mixing ratio of landfill hybrid CH4 source slot 05"  "ppmv"
+state   real    ch4_s06    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S06"       "mixing ratio of landfill hybrid CH4 source slot 06"  "ppmv"
+state   real    ch4_s07    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S07"       "mixing ratio of landfill hybrid CH4 source slot 07"  "ppmv"
+state   real    ch4_s08    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S08"       "mixing ratio of landfill hybrid CH4 source slot 08"  "ppmv"
+state   real    ch4_s09    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S09"       "mixing ratio of landfill hybrid CH4 source slot 09"  "ppmv"
+state   real    ch4_s10    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S10"       "mixing ratio of landfill hybrid CH4 source slot 10"  "ppmv"
+state   real    ch4_s11    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S11"       "mixing ratio of landfill hybrid CH4 source slot 11"  "ppmv"
+state   real    ch4_s12    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S12"       "mixing ratio of landfill hybrid CH4 source slot 12"  "ppmv"
+state   real    ch4_s13    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S13"       "mixing ratio of landfill hybrid CH4 source slot 13"  "ppmv"
+state   real    ch4_s14    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S14"       "mixing ratio of landfill hybrid CH4 source slot 14"  "ppmv"
+state   real    ch4_s15    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S15"       "mixing ratio of landfill hybrid CH4 source slot 15"  "ppmv"
+state   real    ch4_s16    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S16"       "mixing ratio of landfill hybrid CH4 source slot 16"  "ppmv"
+state   real    ch4_s17    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S17"       "mixing ratio of landfill hybrid CH4 source slot 17"  "ppmv"
+state   real    ch4_s18    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S18"       "mixing ratio of landfill hybrid CH4 source slot 18"  "ppmv"
+state   real    ch4_s19    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S19"       "mixing ratio of landfill hybrid CH4 source slot 19"  "ppmv"
+state   real    ch4_s20    ikjftb   chem         1         -     i0{12}rhusdf=(bdy_interp:dt)  "CH4_S20"       "mixing ratio of landfill hybrid CH4 source slot 20"  "ppmv"
 state   real    pv         ikj      misc         1         -     h                             "PV"            "Potential Vorticity"        "pvu"
 
 #SAPRCNOV additional variables, automatically created using diff_mechanisSpc_wrfRegistry.m script (pablo-saide@uiowa.edu)
@@ -3841,6 +3881,7 @@ rconfig   integer     kfcup_diag          namelist,chem          max_domains    
 rconfig   integer     aer_aerodynres_opt  namelist,chem          max_domains    1       rh    "aer_aerodynres_opt"  ""      ""
 rconfig   integer     emiss_opt           namelist,chem          max_domains    0       rh    "emiss_opt"           ""      ""
 rconfig   integer     emiss_opt_vol       namelist,chem          max_domains    0       rh    "emiss_opt_vol"       ""      ""
+rconfig   integer     landfill_flux_mode  namelist,chem          max_domains    0       rh    "landfill_flux_mode"  "0: passive, 1: FLQC/MAVAIL scaling for landfill hybrid emissions"      ""
 rconfig   integer     dust_opt            namelist,chem          1              0       rh    "dust_opt"            ""      ""
 rconfig   integer     dust_schme          namelist,chem          1              2       rh    "dust_schme"       ""      ""
 
@@ -3940,6 +3981,7 @@ package   racmsorg_aq  chem_opt==12                  -             chem:so2,sulf
 package   chem_tracer   chem_opt==13                 -             chem:so2,no,ald,hcho,ora2,co
 package   chem_trace2   chem_opt==14                 -             chem:tracer_1
 package   chem_trace_ens   chem_opt==15              -             chem:tracer_1,tracer_2,tracer_3,tracer_4,tracer_5,tracer_6,tracer_7,tracer_8,tracer_9,tracer_10,tracer_11,tracer_12,tracer_13,tracer_14,tracer_15,tracer_16,tracer_17,tracer_18,tracer_19,tracer_20,tracer_ens
+package   landfill_hybrid  chem_opt==96              -             chem:ch4_s01,ch4_s02,ch4_s03,ch4_s04,ch4_s05,ch4_s06,ch4_s07,ch4_s08,ch4_s09,ch4_s10,ch4_s11,ch4_s12,ch4_s13,ch4_s14,ch4_s15,ch4_s16,ch4_s17,ch4_s18,ch4_s19,ch4_s20
 
 # GHG chem packages, passive tracers
 package   co2_tracer        chem_opt==16             -             chem:co2_ant,co2_bio,co2_oce,co2_bck,co2_tst,co_ant,co_bck
@@ -4071,6 +4113,7 @@ package   ecb05_opt2      emiss_opt==15                   -             emis_ant
 # Anthropogenic CO2, CO and CH4 emissions:
 package   eco2            emiss_opt==16                  -             emis_ant:e_co2,e_co2tst,e_co
 package   eghg            emiss_opt==17                  -             emis_ant:e_co2,e_co2tst,e_co,e_cotst,e_ch4,e_ch4tst
+package   elandfill_hybrid emiss_opt==96                -             emis_ant:e_ch4_s01,e_ch4_s02,e_ch4_s03,e_ch4_s04,e_ch4_s05,e_ch4_s06,e_ch4_s07,e_ch4_s08,e_ch4_s09,e_ch4_s10,e_ch4_s11,e_ch4_s12,e_ch4_s13,e_ch4_s14,e_ch4_s15,e_ch4_s16,e_ch4_s17,e_ch4_s18,e_ch4_s19,e_ch4_s20
 package   ecrimech        emiss_opt==19                   -             emis_ant:e_co,e_no,e_no2,e_so2,e_nh3,e_c2h6,e_c3h8,e_c2h4,e_c3h6,e_c5h8,e_tm123b,e_tm124b,e_tm135b,e_oethtol,e_methtol,e_pethtol,e_dime35eb,e_hcho,e_ch3cho,e_c2h5cho,e_ket,e_mek,e_ch3oh,e_c2h5oh,e_c2h2,e_benzene,e_nc4h10,e_toluene,e_oxyl,e_tbut2ene,e_ch3co2h
 package   ecrimechtno     emiss_opt==20                  -             emis_ant:e_co,e_no,e_no2,e_so2,e_nh3,e_c2h6,e_c3h8,e_c2h4,e_c3h6,e_c5h8,e_tm123b,e_tm124b,e_tm135b,e_oethtol,e_methtol,e_pethtol,e_dime35eb,e_hcho,e_ch3cho,e_c2h5cho,e_ket,e_mek,e_ch3oh,e_c2h5oh,e_c2h2,e_benzene,e_nc4h10,e_toluene,e_oxyl,e_tbut2ene,e_ch3co2h,e_bc_1,e_ec_1_25,e_ec_25_10,e_oc_dom,e_oc_tra,e_oc_25_10,e_pm25,e_oin_25,e_oin_10
 #

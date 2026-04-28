@@ -38,6 +38,8 @@ CONTAINS
 
      case (CHEM_TRACE2)
         get_last_gas = p_tracer_1
+     case (LANDFILL_HYBRID)
+        get_last_gas = p_ch4_s20
 
      case (GOCART_SIMPLE)
         get_last_gas = p_msa
