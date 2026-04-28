@@ -24,12 +24,15 @@ CONTAINS
 
     INTEGER :: i, j, k, n
     REAL :: conv_rho, flux_scale, mavail_floor
-    INTEGER, DIMENSION(20), PARAMETER :: chem_idx = (/                           &
+    INTEGER, DIMENSION(20) :: chem_idx
+    INTEGER, DIMENSION(20) :: emis_idx
+
+    chem_idx = (/                                                                 &
       p_ch4_s01, p_ch4_s02, p_ch4_s03, p_ch4_s04, p_ch4_s05,                     &
       p_ch4_s06, p_ch4_s07, p_ch4_s08, p_ch4_s09, p_ch4_s10,                     &
       p_ch4_s11, p_ch4_s12, p_ch4_s13, p_ch4_s14, p_ch4_s15,                     &
       p_ch4_s16, p_ch4_s17, p_ch4_s18, p_ch4_s19, p_ch4_s20 /)
-    INTEGER, DIMENSION(20), PARAMETER :: emis_idx = (/                           &
+    emis_idx = (/                                                                 &
       p_e_ch4_s01, p_e_ch4_s02, p_e_ch4_s03, p_e_ch4_s04, p_e_ch4_s05,           &
       p_e_ch4_s06, p_e_ch4_s07, p_e_ch4_s08, p_e_ch4_s09, p_e_ch4_s10,           &
       p_e_ch4_s11, p_e_ch4_s12, p_e_ch4_s13, p_e_ch4_s14, p_e_ch4_s15,           &
