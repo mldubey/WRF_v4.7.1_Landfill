@@ -66,6 +66,7 @@ target_sources(
                   module_data_sorgam_vbs.F
                   module_ftuv_subs.F
                   module_ghg_fluxes.F
+                  module_landfill_hybrid_fluxes.F
                   module_gocart_drydep.F
                   module_gocart_settling.F
                   module_gocart_so2so4.F
