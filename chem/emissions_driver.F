@@ -24,7 +24,7 @@ CONTAINS
          ebu, ebu_in,mean_fct_agtf,mean_fct_agef,                          &
          mean_fct_agsv,mean_fct_aggr,firesize_agtf,firesize_agef,          &
          firesize_agsv,firesize_aggr,                                      &
-         u10,v10,ivgtyp,isltyp,gsw,vegfra,rmol,ust,znt,dms_0,              &
+         u10,v10,ivgtyp,isltyp,gsw,vegfra,rmol,ust,flqc,mavail,znt,dms_0,  &
          erup_beg,erup_end,                                                &
          xland,xlat,xlong,z_at_w,z,smois,dustin,seasin,                    &
          sebio_iso,sebio_oli,sebio_api,sebio_lim,sebio_xyl,                &
@@ -195,6 +195,8 @@ CONTAINS
                                                   vegfra,                  &
                                                      rmol,                 &
                                                      ust,                  &
+                                                     flqc,                 &
+                                                     mavail,               &
                                                      xland,                &
                                                      xlat,                 &
                                                      xlong,                &
@@ -1205,7 +1207,7 @@ real, save :: freq_industry(24)    = &
                                       ims, ime, jms, jme, kms, kme,              &
                                       its, ite, jts, jte, kts, kte,              &
                                       dtstep, dz8w, config_flags, rho_phy,        &
-                                      chem, emis_ant, FLQC, MAVAIL)
+                                      chem, emis_ant, flqc, mavail)
 !
     CASE(CO2_TRACER,GHG_TRACER)  ! for ghg_tracer package
 
