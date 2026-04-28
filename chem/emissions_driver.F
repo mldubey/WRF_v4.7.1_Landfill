@@ -107,6 +107,7 @@ CONTAINS
   USE module_aerosols_sorgam_vbs, only: sorgam_vbs_addemiss
   USE module_aerosols_soa_vbs, only: soa_vbs_addemiss
   USE module_ghg_fluxes
+  USE module_landfill_hybrid_fluxes
   USE module_lightning_nox_driver
   USE module_cam_mam_addemiss, only: cam_mam_addemiss
 #if( WRF_USE_CLM == 1)
@@ -1198,6 +1199,13 @@ real, save :: freq_industry(24)    = &
              end do
           end do
        end do
+!
+    CASE (LANDFILL_HYBRID)
+      CALL add_landfill_hybrid_fluxes(ids, ide, jds, jde, kds, kde,              &
+                                      ims, ime, jms, jme, kms, kme,              &
+                                      its, ite, jts, jte, kts, kte,              &
+                                      dtstep, dz8w, config_flags, rho_phy,        &
+                                      chem, emis_ant, FLQC, MAVAIL)
 !
     CASE(CO2_TRACER,GHG_TRACER)  ! for ghg_tracer package
 
