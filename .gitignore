@@ -37,3 +37,20 @@ wrfout_d*
 rsl.out.*
 rsl.error.*
 *.log
+
+# --- CMake / out-of-tree install (WRF configure_new + cmake --build) ---
+install/
+Testing/
+compile_commands.json
+.ninja_deps
+.ninja_log
+*.ninja
+*.gcno
+*.gcda
+core.*
+vgcore.*
+*.stackdump
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
