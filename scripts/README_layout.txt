@@ -25,3 +25,8 @@ Typical cycle
   1) Build once in WRF_v4.7.1_Landfill (configure_new -x, cmake --build _build ...).
   2) new_experiment.sh my_methane_test
   3) cd $SCRATCH/.../my_methane_test/run — add namelist.input, link met_em*, wrfchemi*, run real/wrf.
+
+Runtime note (cluster)
+  If binaries fail with GLIBCXX_* from libpnetcdf/netcdf, prepend a newer libstdc++ dir, e.g.:
+    export LD_LIBRARY_PATH=/path/to/conda/lib:$LD_LIBRARY_PATH
+  Smoke: scripts/smoke_mpi_executables.sh [nprocs]   (default 1 proc, 25s timeout)
