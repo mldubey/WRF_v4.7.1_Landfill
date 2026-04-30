@@ -54,3 +54,6 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
+
+# Optional physics_mmm sources (often missing from minimal git checkouts; sync from full WRF release or sibling tree)
+phys/physics_mmm/
